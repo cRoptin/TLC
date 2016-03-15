@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>AddBulkServlet</servlet-name>
+		<servlet-class>fr.istic.TP1.AddBulkServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RemoveBulkServlet</servlet-name>
+		<servlet-class>fr.istic.TP1.RemoveBulkServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchBulksServlet</servlet-name>
+		<servlet-class>fr.istic.TP1.SearchBulksServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddBulkServlet</servlet-name>
+		<url-pattern>/addBulk</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoveBulkServlet</servlet-name>
+		<url-pattern>/rmBulk</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchBulksServlet</servlet-name>
+		<url-pattern>/findBulk</url-pattern>
+	</servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>TP1.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
